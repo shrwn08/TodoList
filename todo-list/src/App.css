@@ -1,0 +1,98 @@
+* {
+  background-color: #ffeae3;
+  position: relative;
+}
+
+.Header {
+  background-color: #121481;
+  color: whitesmoke;
+  text-align: center;
+}
+.formPage {
+  position: absolute;
+  left: 50%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+
+  transform: translate(-50%);
+}
+.addTodo {
+  width: 100%;
+  height: 40px;
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 10px;
+  font-size: large;
+}
+form {
+  width: 50%;
+  display: flex;
+}
+.addTask {
+  margin-left: 20px;
+  width: 100px;
+  border-radius: 10px;
+  background-color: #ffcbcb;
+  font-weight: bold;
+}
+
+.removeAll {
+  margin-left: 20px;
+  width: 100px;
+  border-radius: 10px;
+  background-color: maroon;
+  color: white;
+  font-weight: bold;
+}
+
+.taskList {
+  width: 40%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 10rem;
+  background-color: #fff;
+  transform: translate(-50%);
+  list-style-type: none;
+}
+
+.mainList {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid whitesmoke;
+  background-color: #efecec;
+  height: 100%;
+  text-align: center;
+}
+p {
+  background-color: #efecec;
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 767px) {
+  /* start of medium tablet styles */
+
+  .formPage {
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%);
+  }
+  .addTodo {
+    width: 100%;
+    height: 40px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 10px;
+    font-size: large;
+  }
+  form {
+    width: 90%;
+    display: flex;
+  }
+  .taskList {
+    width: 90%;
+    height: 100%;
+  }
+}
